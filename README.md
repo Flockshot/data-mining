@@ -20,18 +20,18 @@ This project is divided into four distinct modules, each corresponding to a core
 
 ### Part 1: Exploratory Data Analysis (EDA) & Preprocessing
 
-* [cite_start]**Task:** Data understanding, cleaning, and transformation of a real-world COVID-19 survey dataset[cite: 3522].
+* **Task:** Data understanding, cleaning, and transformation of a real-world COVID-19 survey dataset.
 * **Script:** `data_analysis.py`
 * **Report:** `data_analysis_report.pdf`
 
 **Methodology:**
-* [cite_start]**Data Understanding:** Loaded the `cng514-covid-survey-data.csv` dataset and calculated initial statistical metrics (mean, variance, quartiles)[cite: 3522].
+* **Data Understanding:** Loaded the `cng514-covid-survey-data.csv` dataset and calculated initial statistical metrics (mean, variance, quartiles).
 * **Data Cleaning:**
-    * **Missing Data:** Handled missing values using techniques like mean/median imputation or row removal.
-    * [cite_start]**Noisy Data:** Identified and corrected outliers using binning (equal-width and equal-depth) [cite: 3522-3530].
+    * **Missing Data:** Handled missing values using techniques like mean/median imputation or row removal.
+    * **Noisy Data:** Identified and corrected outliers using binning (equal-width and equal-depth).
 * **Data Transformation:**
-    * [cite_start]**Feature Scaling:** Applied Min-Max normalization and Z-score standardization to numerical features[cite: 3530].
-    * [cite_start]**Correlation:** Calculated the Pearson correlation matrix to identify relationships between variables (e.g., `Coronavirus Concern2` vs. `BirthYear2020`)[cite: 3522].
+    * **Feature Scaling:** Applied Min-Max normalization and Z-score standardization to numerical features.
+    * **Correlation:** Calculated the Pearson correlation matrix to identify relationships between variables (e.g., `Coronavirus Concern2` vs. `BirthYear2020`).
 * **Visualization:** Used histograms and boxplots to visualize data distributions before and after cleaning.
 
 > **[Image: Histogram/Boxplot from data_analysis_report.pdf]**
@@ -51,10 +51,10 @@ This project is divided into four distinct modules, each corresponding to a core
 * **Optimization:** Determined the optimal hyperparameter `k` (number of neighbors) by plotting the "Elbow Method" graph and finding the point of diminishing returns for accuracy.
 * **Validation:** Employed **10-fold cross-validation** to ensure the model's performance was robust and not a result of a "lucky" train-test split.
 * **Evaluation:** Assessed the best model's performance using a confusion matrix and key metrics:
-    * **Accuracy:** Overall correct predictions.
-    * **Precision:** Percentage of "at-risk" predictions that were correct.
-    * **Recall:** Percentage of actual "at-risk" patients that were correctly identified.
-    * **F1-Score:** The harmonic mean of Precision and Recall.
+    * **Accuracy:** Overall correct predictions.
+    * **Precision:** Percentage of "at-risk" predictions that were correct.
+    * **Recall:** Percentage of actual "at-risk" patients that were correctly identified.
+    * **F1-Score:** The harmonic mean of Precision and Recall.
 
 > **[Image: k-NN Elbow Method Plot]**
 >
@@ -69,23 +69,23 @@ This project is divided into four distinct modules, each corresponding to a core
 * **Report:** `apriori_dbscan_report.pdf`
 
 **Methodology:**
-* [cite_start]**Data:** Used the `Apple_sequence_dataset.txt`, where each line represents a sequence of "Areas of Interest" (AOIs) a user looked at [cite: 3571-3572].
+* **Data:** Used the `Apple_sequence_dataset.txt`, where each line represents a sequence of "Areas of Interest" (AOIs) a user looked at.
 * **Algorithm:** Implemented the **Apriori** algorithm to efficiently find all itemsets (groups of AOIs) that meet a minimum `support` threshold.
-* [cite_start]**Rule Generation:** Generated association rules (e.g., `A -> B`) from the frequent itemsets that met a minimum `confidence` threshold[cite: 3575].
+* **Rule Generation:** Generated association rules (e.g., `A -> B`) from the frequent itemsets that met a minimum `confidence` threshold.
 * **Analysis:** Evaluated how the number and quality of rules changed by experimenting with different support and confidence values.
 
 ---
 
 ### Part 4: Clustering (DBSCAN)
 
-* [cite_start]**Task:** Identified "hotspots" or regions of high user engagement on a webpage by clustering raw (x, y) eye-tracking fixation points[cite: 3576].
+* **Task:** Identified "hotspots" or regions of high user engagement on a webpage by clustering raw (x, y) eye-tracking fixation points.
 * **Script:** `my_dbscan.py`
 * **Report:** `apriori_dbscan_report.pdf`
 
 **Methodology:**
 * **Data:** Used the raw (x,y) coordinates from the `Apple_fixation_dataset` (data from 37 participants).
 * **Algorithm:** Implemented **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise). This algorithm is ideal for this task as it can find arbitrarily shaped clusters and identify outliers (fixations not part of any main cluster).
-* [cite_start]**Tuning:** Experimented with the `epsilon` (neighborhood radius) and `min_samples` (core point density) parameters to find the most meaningful clusters [cite: 3577-3578].
+* **Tuning:** Experimented with the `epsilon` (neighborhood radius) and `min_samples` (core point density) parameters to find the most meaningful clusters.
 * **Visualization:** Plotted the resulting cluster-labeled (x,y) points onto the original `APPLE.png` image to visually validate the discovered Areas of Interest.
 
 > **[Image: DBSCAN Clusters on APPLE.png]**
