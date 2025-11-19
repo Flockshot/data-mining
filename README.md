@@ -35,7 +35,6 @@ This project is divided into four distinct modules, each corresponding to a core
 * **Visualization:** Used histograms and boxplots to visualize data distributions before and after cleaning.
 
 ![Image: Histogram from data_analysis_report.pdf](.media/data_histogram.png)
-<p style="text-align: center">Example Histogram</p>
 
 ---
 
