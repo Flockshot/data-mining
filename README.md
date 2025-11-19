@@ -27,11 +27,11 @@ This project is divided into four distinct modules, each corresponding to a core
 **Methodology:**
 * **Data Understanding:** Loaded the `cng514-covid-survey-data.csv` dataset and calculated initial statistical metrics (mean, variance, quartiles).
 * **Data Cleaning:**
-    * **Missing Data:** Handled missing values using techniques like mean/median imputation or row removal.
-    * **Noisy Data:** Identified and corrected outliers using binning (equal-width and equal-depth).
+    * **Missing Data:** Handled missing values using techniques like mean/median imputation or row removal.
+    * **Noisy Data:** Identified and corrected outliers using binning (equal-width and equal-depth).
 * **Data Transformation:**
-    * **Feature Scaling:** Applied Min-Max normalization and Z-score standardization to numerical features.
-    * **Correlation:** Calculated the Pearson correlation matrix to identify relationships between variables (e.g., `Coronavirus Concern2` vs. `BirthYear2020`).
+    * **Feature Scaling:** Applied Min-Max normalization and Z-score standardization to numerical features.
+    * **Correlation:** Calculated the Pearson correlation matrix to identify relationships between variables (e.g., `Coronavirus Concern2` vs. `BirthYear2020`).
 * **Visualization:** Used histograms and boxplots to visualize data distributions before and after cleaning.
 
 > **[Image: Histogram/Boxplot from data_analysis_report.pdf]**
@@ -51,10 +51,10 @@ This project is divided into four distinct modules, each corresponding to a core
 * **Optimization:** Determined the optimal hyperparameter `k` (number of neighbors) by plotting the "Elbow Method" graph and finding the point of diminishing returns for accuracy.
 * **Validation:** Employed **10-fold cross-validation** to ensure the model's performance was robust and not a result of a "lucky" train-test split.
 * **Evaluation:** Assessed the best model's performance using a confusion matrix and key metrics:
-    * **Accuracy:** Overall correct predictions.
-    * **Precision:** Percentage of "at-risk" predictions that were correct.
-    * **Recall:** Percentage of actual "at-risk" patients that were correctly identified.
-    * **F1-Score:** The harmonic mean of Precision and Recall.
+    * **Accuracy:** Overall correct predictions.
+    * **Precision:** Percentage of "at-risk" predictions that were correct.
+    * **Recall:** Percentage of actual "at-risk" patients that were correctly identified.
+    * **F1-Score:** The harmonic mean of Precision and Recall.
 
 > **[Image: k-NN Elbow Method Plot]**
 >
