@@ -34,9 +34,7 @@ This project is divided into four distinct modules, each corresponding to a core
     * **Correlation:** Calculated the Pearson correlation matrix to identify relationships between variables (e.g., `Coronavirus Concern2` vs. `BirthYear2020`).
 * **Visualization:** Used histograms and boxplots to visualize data distributions before and after cleaning.
 
-> **[Image: Histogram/Boxplot from data_analysis_report.pdf]**
->
-> *(**Developer Note:** Place a screenshot of one of your data distribution plots from `data_analysis_report.pdf` here.)*
+![Image: Histogram from data_analysis_report.pdf](.media/data_histogram.png)
 
 ---
 
@@ -56,9 +54,7 @@ This project is divided into four distinct modules, each corresponding to a core
     * **Recall:** Percentage of actual "at-risk" patients that were correctly identified.
     * **F1-Score:** The harmonic mean of Precision and Recall.
 
-> **[Image: k-NN Elbow Method Plot]**
->
-> *(**Developer Note:** Place your screenshot of the k-NN elbow plot from `classification_report.pdf` here.)*
+![Image: k-NN Elbow Method Plot](.media/elbow_plot.png)
 
 ---
 
@@ -88,9 +84,7 @@ This project is divided into four distinct modules, each corresponding to a core
 * **Tuning:** Experimented with the `epsilon` (neighborhood radius) and `min_samples` (core point density) parameters to find the most meaningful clusters.
 * **Visualization:** Plotted the resulting cluster-labeled (x,y) points onto the original `APPLE.png` image to visually validate the discovered Areas of Interest.
 
-> **[Image: DBSCAN Clusters on APPLE.png]**
->
-> *(**Developer Note:** This is your best visual. Place the screenshot of the `APPLE.png` with your DBSCAN cluster results from `apriori_dbscan_report.pdf` here.)*
+![Image: DBSCAN Clusters on APPLE.png](.media/dbscan.png)
 
 ## 🚀 How to Run
 
